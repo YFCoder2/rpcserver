@@ -15,13 +15,13 @@ public class SendSMSHandle {
 		return ss;
 	}
 	
-	public String handleMessage(byte[] body) {
-		String _body = new String(body);
-		System.out.println(_body);
-		String[] sms = _body.split(":");
-		String phone = sms[0];
-		String content = sms[1];
-		boolean is = SendSMSTool.sendSMS(phone, content);
-		return is ? "SUCCESS" : "FAIL";
-	}
+//	public String handleMessage(byte[] body) {
+//		String _body = new String(body);
+//		System.out.println(_body);
+//		String[] sms = _body.split(":");
+//		String phone = sms[0];
+//		String content = sms[1];
+//		boolean is = SendSMSTool.sendSMS(phone, content);
+//		return is ? "SUCCESS" : "FAIL";
+//	}
 }
